@@ -1,0 +1,16 @@
+
+
+TLS Handshake
+Handshake begins with Client Hello message which contains TLS version, cipher suite info and a random nonce.
+The server then replies with Server Hello that includes the chosen cipher suite, certification, server key exchange and session ticket.
+Then the key exchange is done and both client and server gain access to the shared key, which is used to establish secure communication.
+
+MITM protection mechanisms
+Server sends the certificate that is signed by a trusted Certificate Authority, guaranteeing its authenticity. 
+Because of public key cryptography only the server can decrypt the pre-master secret.
+Even if someone were to intercept communication between server and client they would be unable to decrypt the data without the private key.
+
+TLS application in websites
+When visiting a HTTPS website the browser initiates the TLS handshake. The data is then encrypted between the browser(client) and server.
+The server verifies its identity via the certificate therefore ensuring Authentication.
+The encrypted data ensures Confidentiality and makes it so that the data cannot be tampered with ensuring Integrity.
