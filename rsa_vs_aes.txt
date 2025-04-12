@@ -1,0 +1,10 @@
+
+All encryptions were done via terminal commands using openssl.
+
+RSA is asymmetric and uses a public/private key pair. 
+It is suitable for encryption of smaller data and needs secure sharing of AES keys.
+RSA encryption is slower and more CPU-intensive.
+
+AES is symmetric and uses only one shared secret key.
+It is suitable for encryption of larger files and is very fast.
+AES encruption is more efficient for encryption in bulk.
